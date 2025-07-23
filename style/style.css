@@ -30,6 +30,7 @@ main{
     font-weight: 500;
     font-size: 1rem;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .banner-container img {
     display: block;
@@ -50,7 +51,8 @@ main{
     font-size: 1rem;
     font-weight: 500;
 }
-                                     /* news section style */
+ /* news section style */
+
 .news{
     max-width: 1414px;
     display: flex;
@@ -77,6 +79,7 @@ main{
     color: black;
     /* padding: 15px 60px; */
     text-align: center;
+    border: 1px solid rgb(188, 180, 180);
 }
     
 
@@ -102,6 +105,7 @@ main{
 .news-card-bottom{
     padding: 20px 20px;
     font-size: 1.25rem;
+    font-weight: 500;
 }
 .card-body button{
     background: transparent;
@@ -111,10 +115,11 @@ main{
     font-weight: 500;
     
 }
-.card-body-h5{
-     font-size: 1,50rem;
+.card-body h5{
+     font-size: 1,rem;
     font-weight: 500;
     margin: 0 auto;
+    padding: 20px 0px;
 }
 .card-bottom{
     display: flex;
@@ -122,6 +127,7 @@ main{
     color: rgb(82, 79, 79);
 }
 /* footer section style */
+
 .footer-section{
     background-color: black;
     height: 400px;
@@ -149,6 +155,19 @@ main{
     text-decoration: none;
     color: rgba(185, 185, 185, 1);
 }
+.footer-hr{
+    width: 1150px;
+    margin: 20px auto;
+    border: .5px solid rgba(255, 255, 255, 0.1);
+    
+}
+button:hover{
+    background-color: red;
+}
+.btn-primary:hover{
+    background-color: rgb(99, 139, 39);
+  
+}
   
 /* Responsive for small device */
 
@@ -156,14 +175,52 @@ main{
         .banner-container,
         .news,
         .footer-nav ul{
+            display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
             
         }
+        .banner-container{
+            margin: 20px 20px 0px 20px;
+            border-radius: 10px;
+        }
+        .banner-container .btn-primary{
+            margin-bottom: 20px;
+        }
         
+        .banner-container h2{
+            font-size: 1.50rem;
+            line-height: normal;
+            margin: 20px auto;
+        }
+        .banner-container p{
+            max-width: 258px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            font-weight: 400;
+            margin: 10px auto;
+            
+        }
+        .banner-para{
+            display: none;
+        }
+        .banner-left{
+            width: 100%;
+            padding-left: 0%;
+        }
+        .news-section-left{
+            margin: 0 auto;
+            background-color: transparent;
+        }
         .news-section-right{
             grid-template-columns: 1fr;
+            margin: 0 20px;
         }
+        .news-card-bottom{
+            text-align: left;
+        }
+        
         .footer-section{
             height: fit-content;
         }
@@ -171,6 +228,4 @@ main{
             max-width: 250px;
         }
         
-
-        
-    }
+  }
