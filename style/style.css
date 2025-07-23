@@ -7,6 +7,10 @@ main{
     /* max-width: 1280px; */
 }
 /* banner sectioin */
+button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
 
 .banner-container{
     max-width: 1414px;
@@ -168,7 +172,17 @@ button:hover{
     background-color: rgb(99, 139, 39);
   
 }
-  
+  /* link card style */
+ 
+ 
+  .card-contain{
+    background-color: antiquewhite;
+    max-width: 350px;
+    max-height: 800px;
+    padding: 50px 50px;
+    margin: 100px auto;
+    text-align: center;
+  }
 /* Responsive for small device */
 
     @media screen and (max-width:576px) {
